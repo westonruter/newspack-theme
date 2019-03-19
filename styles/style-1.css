@@ -1,58 +1,4 @@
 @charset "UTF-8";
-/*
-Theme Name: Newspack
-Theme URI: https://github.com/Automattic/newspack-theme
-Author: Automattic
-Author URI: https://newspack.blog
-Description:
-Requires at least: WordPress 4.9.6
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: newspack
-Tags:
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-
-Newspack Theme is based on Underscores https://underscores.me/, (C) 2012-2018 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
-
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
-*/
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Variables
-# Normalize
-# Typography
-	## Headings
-	## Copy
-# Elements
-	## Lists
-	## Tables
-# Forms
-	## Buttons
-	## Fields
-# Navigation
-	## Links
-	## Menus
-	## Next & Previous
-# Accessibility
-# Alignments
-# Clearings
-# Layout
-# Widgets
-# Content
-	## Archives
-	## Posts and pages
-	## Comments
-# Blocks
-# Media
-	## Captions
-	## Galleries
---------------------------------------------------------------*/
 /* Mixins */
 /* If we add the border using a regular CSS border, it won't look good on non-retina devices,
  * since its edges can look jagged due to lack of antialiasing. In this case, we are several
@@ -2262,8 +2208,8 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #111;
-  font-family: "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  color: #eee;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-weight: 400;
   font-size: 1em;
   line-height: 1.6;
@@ -2276,8 +2222,8 @@ input,
 select,
 optgroup,
 textarea {
-  color: #111;
-  font-family: "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  color: #eee;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-weight: 400;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
@@ -2309,7 +2255,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
 }
 
 .main-navigation,
@@ -2336,7 +2282,7 @@ h6 {
 }
 
 .page-title {
-  font-family: "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
 }
 
 .site-branding,
@@ -2459,7 +2405,7 @@ i {
 blockquote cite {
   font-size: 0.71111em;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
 }
 
 pre {
@@ -2510,11 +2456,11 @@ html {
 }
 
 ::-moz-selection {
-  background-color: #bfdcea;
+  background-color: #40260d;
 }
 
 ::selection {
-  background-color: #bfdcea;
+  background-color: #40260d;
 }
 
 *,
@@ -2524,17 +2470,17 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: #111;
 }
 
 a {
   transition: color 110ms ease-in-out;
-  color: #0073aa;
+  color: #cc6600;
 }
 
 a:hover,
 a:active {
-  color: #005177;
+  color: #994d00;
   outline: 0;
   text-decoration: none;
 }
@@ -2606,7 +2552,7 @@ figure {
 }
 
 blockquote {
-  border-left: 2px solid #0073aa;
+  border-left: 2px solid #cc6600;
   margin-left: 0;
   padding: 0 0 0 1rem;
 }
@@ -2623,7 +2569,7 @@ table {
   margin: 0 0 1rem;
   border-collapse: collapse;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
 }
 
 table td,
@@ -2640,12 +2586,12 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   transition: background 150ms ease-in-out;
-  background: #0073aa;
+  background: #cc6600;
   border: none;
   border-radius: 5px;
   box-sizing: border-box;
-  color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #111;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-size: 0.88889em;
   font-weight: 700;
   line-height: 1.2;
@@ -2660,7 +2606,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background: #111;
+  background: #eee;
   cursor: pointer;
 }
 
@@ -2669,7 +2615,7 @@ button:visited,
 input[type="button"]:visited,
 input[type="reset"]:visited,
 input[type="submit"]:visited {
-  color: #fff;
+  color: #111;
   text-decoration: none;
 }
 
@@ -2678,7 +2624,7 @@ button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
-  background: #111;
+  background: #eee;
   outline: thin dotted;
   outline-offset: -4px;
 }
@@ -2700,8 +2646,8 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
   -webkit-backface-visibility: hidden;
-  background: #fff;
-  border: solid 1px #ccc;
+  background: #111;
+  border: solid 1px #666;
   box-sizing: border-box;
   outline: none;
   padding: 0.36rem 0.66rem;
@@ -2726,8 +2672,8 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-  border-color: #0073aa;
-  outline: thin solid rgba(0, 115, 170, 0.15);
+  border-color: #cc6600;
+  outline: thin solid rgba(204, 102, 0, 0.15);
   outline-offset: -4px;
 }
 
@@ -2753,16 +2699,16 @@ form p {
 --------------------------------------------------------------*/
 a {
   transition: color 110ms ease-in-out;
-  color: #0073aa;
+  color: #cc6600;
 }
 
 a:visited {
-  color: #0073aa;
+  color: #cc6600;
 }
 
 a:hover,
 a:active {
-  color: #005177;
+  color: #994d00;
   outline: 0;
   text-decoration: none;
 }
@@ -2808,7 +2754,7 @@ body.page .main-navigation {
   border: none;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
@@ -2840,14 +2786,14 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu > li {
-  color: #0073aa;
+  color: #cc6600;
   display: inline;
   position: relative;
 }
 
 .main-navigation .main-menu > li > a {
   font-weight: 700;
-  color: #0073aa;
+  color: #cc6600;
   margin-right: 0.5rem;
 }
 
@@ -2857,7 +2803,7 @@ body.page .main-navigation {
 
 .main-navigation .main-menu > li > a:hover,
 .main-navigation .main-menu > li > a:hover + svg {
-  color: #005177;
+  color: #994d00;
 }
 
 .main-navigation .main-menu > li.menu-item-has-children {
@@ -2918,8 +2864,8 @@ body.page .main-navigation {
 }
 
 .main-navigation .sub-menu {
-  background-color: #0073aa;
-  color: #fff;
+  background-color: #cc6600;
+  color: #111;
   list-style: none;
   padding-left: 0;
   position: absolute;
@@ -2971,7 +2917,7 @@ body.page .main-navigation {
 
 .main-navigation .sub-menu > li > a,
 .main-navigation .sub-menu > li > .menu-item-link-return {
-  color: #fff;
+  color: #111;
   display: block;
   line-height: 1.2;
   text-shadow: none;
@@ -2982,13 +2928,13 @@ body.page .main-navigation {
 .main-navigation .sub-menu > li > a:hover, .main-navigation .sub-menu > li > a:focus,
 .main-navigation .sub-menu > li > .menu-item-link-return:hover,
 .main-navigation .sub-menu > li > .menu-item-link-return:focus {
-  background: #005177;
+  background: #994d00;
 }
 
 .main-navigation .sub-menu > li > a:hover:after, .main-navigation .sub-menu > li > a:focus:after,
 .main-navigation .sub-menu > li > .menu-item-link-return:hover:after,
 .main-navigation .sub-menu > li > .menu-item-link-return:focus:after {
-  background: #005177;
+  background: #994d00;
 }
 
 .main-navigation .sub-menu > li > .menu-item-link-return {
@@ -3146,14 +3092,14 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu > li > a::before {
-  font-family: "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -3249,7 +3195,7 @@ body.page .main-navigation {
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu .sub-menu > li > a::before,
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu .sub-menu > li > a::before,
 .main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu .sub-menu > li > a::before {
-  font-family: "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -3376,20 +3322,20 @@ body.page .main-navigation {
 .social-navigation ul.social-links-menu li a {
   border-bottom: 1px solid transparent;
   display: block;
-  color: #111;
+  color: #eee;
   margin-bottom: -1px;
   transition: opacity 110ms ease-in-out;
 }
 
 .social-navigation ul.social-links-menu li a:hover, .social-navigation ul.social-links-menu li a:active {
-  color: #111;
+  color: #eee;
   opacity: 0.6;
 }
 
 .social-navigation ul.social-links-menu li a:focus {
-  color: #111;
+  color: #eee;
   opacity: 1;
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid #eee;
 }
 
 .social-navigation ul.social-links-menu li a svg {
@@ -3490,7 +3436,7 @@ body.page .main-navigation {
 }
 
 .post-navigation .nav-links a:hover {
-  color: #005177;
+  color: #994d00;
 }
 
 @media only screen and (min-width: 1168px) {
@@ -3607,7 +3553,7 @@ body.page .main-navigation {
 .comment-navigation .nav-next {
   min-width: 50%;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-weight: bold;
 }
 
@@ -3676,12 +3622,12 @@ body.page .main-navigation {
 .site-main #infinite-handle span button:hover,
 .site-main #infinite-handle span button:focus {
   transition: background 150ms ease-in-out;
-  background: #0073aa;
+  background: #cc6600;
   border: none;
   border-radius: 5px;
   box-sizing: border-box;
-  color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #111;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   outline: none;
@@ -3693,21 +3639,21 @@ body.page .main-navigation {
 .site-main #infinite-handle span button:hover,
 .site-main #infinite-handle span button:hover:hover,
 .site-main #infinite-handle span button:focus:hover {
-  background: #111;
+  background: #eee;
   cursor: pointer;
 }
 
 .site-main #infinite-handle span button:visited,
 .site-main #infinite-handle span button:hover:visited,
 .site-main #infinite-handle span button:focus:visited {
-  color: #fff;
+  color: #111;
   text-decoration: none;
 }
 
 .site-main #infinite-handle span button:focus,
 .site-main #infinite-handle span button:hover:focus,
 .site-main #infinite-handle span button:focus:focus {
-  background: #111;
+  background: #eee;
   outline: thin dotted;
   outline-offset: -4px;
 }
@@ -3733,7 +3679,7 @@ body.page .main-navigation {
 }
 
 .screen-reader-text:focus {
-  background-color: #f1f1f1;
+  background-color: #222;
   border-radius: 3px;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
   clip: auto !important;
@@ -3892,21 +3838,21 @@ body.page .main-navigation {
 }
 
 .site-title {
-  color: #111;
+  color: #eee;
   margin: 0;
   /* When there is no description set, make sure navigation appears below title. */
 }
 
 .site-title a {
-  color: #111;
+  color: #eee;
 }
 
 .site-title a:link, .site-title a:visited {
-  color: #111;
+  color: #eee;
 }
 
 .site-title a:hover {
-  color: #4a4a4a;
+  color: white;
 }
 
 .featured-image .site-title {
@@ -3969,7 +3915,7 @@ body.page .main-navigation {
 .site-header.featured-image .social-navigation li,
 .site-header.featured-image .entry-meta,
 .site-header.featured-image .entry-title {
-  color: #fff;
+  color: #111;
 }
 
 .site-header.featured-image .main-navigation a,
@@ -3977,7 +3923,7 @@ body.page .main-navigation {
 .site-header.featured-image .social-navigation a,
 .site-header.featured-image .site-title a,
 .site-header.featured-image .site-featured-image a {
-  color: #fff;
+  color: #111;
   transition: opacity 110ms ease-in-out;
 }
 
@@ -4000,7 +3946,7 @@ body.page .main-navigation {
 .site-header.featured-image .site-featured-image a:active,
 .site-header.featured-image .site-featured-image a:hover + svg,
 .site-header.featured-image .site-featured-image a:active + svg {
-  color: #fff;
+  color: #111;
   opacity: 0.6;
 }
 
@@ -4014,7 +3960,7 @@ body.page .main-navigation {
 .site-header.featured-image .site-title a:focus + svg,
 .site-header.featured-image .site-featured-image a:focus,
 .site-header.featured-image .site-featured-image a:focus + svg {
-  color: #fff;
+  color: #111;
 }
 
 .site-header.featured-image .main-navigation .sub-menu a {
@@ -4022,9 +3968,9 @@ body.page .main-navigation {
 }
 
 .site-header.featured-image .social-navigation a:focus {
-  color: #fff;
+  color: #111;
   opacity: 1;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #111;
 }
 
 .site-header.featured-image .social-navigation svg,
@@ -4095,7 +4041,7 @@ body.page .main-navigation {
 }
 
 .site-header.featured-image .site-featured-image .entry-header .entry-title:before {
-  background: #fff;
+  background: #111;
 }
 
 .site-header.featured-image .site-featured-image .entry-header .entry-meta {
@@ -4173,7 +4119,7 @@ body.page .main-navigation {
 }
 
 .image-filters-enabled .site-header.featured-image .site-featured-image:before {
-  background: #0073aa;
+  background: #cc6600;
   mix-blend-mode: screen;
   opacity: 0.1;
 }
@@ -4186,7 +4132,7 @@ body.page .main-navigation {
 }
 
 .image-filters-enabled .site-header.featured-image .site-featured-image:after {
-  background: #0073aa;
+  background: #cc6600;
   opacity: .8;
   z-index: 3;
   /* Browsers supporting mix-blend-mode don't need opacity < 1 */
@@ -4208,7 +4154,7 @@ body.page .main-navigation {
 
 @supports (mix-blend-mode: overlay) {
   .image-filters-enabled .site-header.featured-image .site-branding-container:after {
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(17, 17, 17, 0.35);
   }
 }
 
@@ -4225,7 +4171,7 @@ body.page .main-navigation {
 }
 
 .image-filters-enabled .site-header.featured-image:after {
-  background: #000e14;
+  background: #180c00;
   opacity: 0.38;
 }
 
@@ -4236,11 +4182,11 @@ body.page .main-navigation {
 }
 
 .site-header.featured-image ::-moz-selection {
-  background: rgba(255, 255, 255, 0.17);
+  background: rgba(17, 17, 17, 0.17);
 }
 
 .site-header.featured-image ::selection {
-  background: rgba(255, 255, 255, 0.17);
+  background: rgba(17, 17, 17, 0.17);
 }
 
 /*--------------------------------------------------------------
@@ -4251,7 +4197,7 @@ body.page .main-navigation {
 }
 
 .sticky-post {
-  background: #0073aa;
+  background: #cc6600;
   color: #fff;
   display: inline-block;
   font-weight: bold;
@@ -4312,7 +4258,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-title a:hover {
-  color: #4a4a4a;
+  color: white;
 }
 
 .entry .entry-meta,
@@ -4341,7 +4287,7 @@ body.page .main-navigation {
 .entry .entry-meta a:hover,
 .entry .entry-footer a:hover {
   text-decoration: none;
-  color: #0073aa;
+  color: #cc6600;
 }
 
 .entry .entry-meta .svg-icon,
@@ -4437,14 +4383,14 @@ body.page .main-navigation {
 }
 
 .image-filters-enabled .entry .post-thumbnail:before {
-  background: #0073aa;
+  background: #cc6600;
   mix-blend-mode: screen;
   opacity: 0.1;
   z-index: 2;
 }
 
 .image-filters-enabled .entry .post-thumbnail:after {
-  background: #0073aa;
+  background: #cc6600;
   mix-blend-mode: multiply;
   opacity: .8;
   z-index: 3;
@@ -4489,7 +4435,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .more-link:hover {
-  color: #0073aa;
+  color: #cc6600;
   text-decoration: none;
 }
 
@@ -4506,8 +4452,8 @@ body.page .main-navigation {
 }
 
 .entry .entry-content a.button:hover {
-  background: #111;
-  color: #fff;
+  background: #eee;
+  color: #111;
   cursor: pointer;
 }
 
@@ -4594,7 +4540,7 @@ body.page .main-navigation {
 }
 
 .author-bio .author-description .author-link:hover {
-  color: #005177;
+  color: #994d00;
   text-decoration: none;
 }
 
@@ -4741,7 +4687,7 @@ body.page .main-navigation {
 .comment-list .pingback .comment-body,
 .comment-list .trackback .comment-body {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-size: 0.71111em;
   font-weight: 500;
   margin-top: 1rem;
@@ -4760,7 +4706,7 @@ body.page .main-navigation {
 .comment-list .pingback .comment-body .comment-edit-link,
 .comment-list .trackback .comment-body .comment-edit-link {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-weight: 500;
 }
 
@@ -4824,7 +4770,7 @@ body.page .main-navigation {
 }
 
 .comment .comment-author .fn a:hover {
-  color: #005177;
+  color: #994d00;
 }
 
 .comment .comment-author .post-author-badge {
@@ -4832,7 +4778,7 @@ body.page .main-navigation {
   display: block;
   height: 18px;
   position: absolute;
-  background: #008fd3;
+  background: #f57a00;
   right: calc(100% - 2.5rem);
   top: -3px;
   width: 18px;
@@ -4867,7 +4813,7 @@ body.page .main-navigation {
 
 .comment .comment-metadata > a:hover,
 .comment .comment-metadata .comment-edit-link:hover {
-  color: #005177;
+  color: #994d00;
   text-decoration: none;
 }
 
@@ -4899,7 +4845,7 @@ body.page .main-navigation {
 }
 
 .comment .comment-metadata .comment-edit-link:hover {
-  color: #0073aa;
+  color: #cc6600;
 }
 
 .comment .comment-content {
@@ -4939,7 +4885,7 @@ body.page .main-navigation {
 
 .comment-reply-link:hover,
 #cancel-comment-reply-link:hover {
-  color: #005177;
+  color: #994d00;
 }
 
 .discussion-avatar-list {
@@ -4976,7 +4922,7 @@ body.page .main-navigation {
 
 .comment-form .comment-notes,
 .comment-form label {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-size: 0.71111em;
   color: #767676;
 }
@@ -5048,7 +4994,7 @@ body.page .main-navigation {
 
 .archive .page-header .page-description {
   display: block;
-  color: #111;
+  color: #eee;
   font-size: 1em;
 }
 
@@ -5142,7 +5088,7 @@ body.page .main-navigation {
 
 #colophon .site-info a:hover {
   text-decoration: none;
-  color: #0073aa;
+  color: #cc6600;
 }
 
 #colophon .site-info .imprint,
@@ -5161,11 +5107,11 @@ body.page .main-navigation {
 }
 
 .widget a {
-  color: #0073aa;
+  color: #cc6600;
 }
 
 .widget a:hover {
-  color: #005177;
+  color: #994d00;
 }
 
 .widget_archive ul,
@@ -5189,7 +5135,7 @@ body.page .main-navigation {
 .widget_recent_entries ul li,
 .widget_rss ul li {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-size: calc(22px * 1.125);
   font-weight: 700;
   line-height: 1.2;
@@ -5216,14 +5162,14 @@ body.page .main-navigation {
 .widget_recent_comments ul ul > li > a::before,
 .widget_recent_entries ul ul > li > a::before,
 .widget_rss ul ul > li > a::before {
-  font-family: "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
 }
 
 .widget_tag_cloud .tagcloud {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-weight: 700;
 }
 
@@ -5466,7 +5412,7 @@ body.page .main-navigation {
   transition: background 150ms ease-in-out;
   border: none;
   font-size: 0.88889em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   line-height: 1.2;
   box-sizing: border-box;
   font-weight: bold;
@@ -5477,7 +5423,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-button .wp-block-button__link:not(.has-background) {
-  background-color: #0073aa;
+  background-color: #cc6600;
 }
 
 .entry .entry-content .wp-block-button .wp-block-button__link:not(.has-text-color) {
@@ -5486,13 +5432,13 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-button .wp-block-button__link:hover {
   color: white;
-  background: #111;
+  background: #eee;
   cursor: pointer;
 }
 
 .entry .entry-content .wp-block-button .wp-block-button__link:focus {
   color: white;
-  background: #111;
+  background: #eee;
   outline: thin dotted;
   outline-offset: -4px;
 }
@@ -5518,17 +5464,17 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color),
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:focus:not(.has-text-color),
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:active:not(.has-text-color) {
-  color: #0073aa;
+  color: #cc6600;
   border-color: currentColor;
 }
 
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover {
   color: white;
-  border-color: #111;
+  border-color: #eee;
 }
 
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover:not(.has-background) {
-  color: #111;
+  color: #eee;
 }
 
 .entry .entry-content .wp-block-archives,
@@ -5542,7 +5488,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-categories li,
 .entry .entry-content .wp-block-latest-posts li {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-size: calc(22px * 1.125);
   font-weight: bold;
   line-height: 1.2;
@@ -5582,14 +5528,14 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-categories ul > li > a::before {
-  font-family: "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
 }
 
 .entry .entry-content .wp-block-latest-posts.is-grid li {
-  border-top: 2px solid #ccc;
+  border-top: 2px solid #666;
   padding-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -5613,13 +5559,13 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-verse {
-  font-family: "Baskerville Old Face", Garamond, "Times New Roman", serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-size: 22px;
   line-height: 1.8;
 }
 
 .entry .entry-content .has-drop-cap:not(:focus):first-letter {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-size: 3.375em;
   line-height: 1;
   font-weight: bold;
@@ -5633,7 +5579,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-pullquote blockquote {
-  color: #111;
+  color: #eee;
   border: none;
   margin-top: calc(4 * 1rem);
   margin-bottom: calc(4.33 * 1rem);
@@ -5661,7 +5607,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-pullquote cite {
   display: inline-block;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   line-height: 1.6;
   text-transform: none;
   color: #767676;
@@ -5689,7 +5635,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-pullquote.is-style-solid-color {
-  background-color: #0073aa;
+  background-color: #cc6600;
   padding-left: 0;
   padding-right: 0;
 }
@@ -5715,7 +5661,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-pullquote.is-style-solid-color a {
-  color: #fff;
+  color: #111;
 }
 
 .entry .entry-content .wp-block-pullquote.is-style-solid-color cite {
@@ -5724,7 +5670,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote {
   max-width: 100%;
-  color: #fff;
+  color: #111;
   padding-left: 0;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -5757,7 +5703,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-quote:not(.is-large), .entry .entry-content .wp-block-quote:not(.is-style-large) {
   border-width: 2px;
-  border-color: #0073aa;
+  border-color: #cc6600;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -5880,7 +5826,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-cover .wp-block-cover-image-text,
 .entry .entry-content .wp-block-cover .wp-block-cover-text,
 .entry .entry-content .wp-block-cover h2 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-size: 1.6875em;
   font-weight: bold;
   line-height: 1.25;
@@ -5972,7 +5918,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption,
 .entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption {
   font-size: 0.71111em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;
@@ -6059,7 +6005,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-file {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
 }
 
 .entry .entry-content .wp-block-file .wp-block-file__button {
@@ -6067,9 +6013,9 @@ body.page .main-navigation {
   transition: background 150ms ease-in-out;
   border: none;
   border-radius: 5px;
-  background: #0073aa;
+  background: #cc6600;
   font-size: 22px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   line-height: 1.2;
   text-decoration: none;
   font-weight: bold;
@@ -6087,12 +6033,12 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-file .wp-block-file__button:hover {
-  background: #111;
+  background: #eee;
   cursor: pointer;
 }
 
 .entry .entry-content .wp-block-file .wp-block-file__button:focus {
-  background: #111;
+  background: #eee;
   outline: thin dotted;
   outline-offset: -4px;
 }
@@ -6139,7 +6085,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   font-weight: bold;
 }
 
@@ -6177,7 +6123,7 @@ body.page .main-navigation {
 .entry .entry-content .has-secondary-background-color,
 .entry .entry-content .has-dark-gray-background-color,
 .entry .entry-content .has-light-gray-background-color {
-  color: #fff;
+  color: #111;
 }
 
 .entry .entry-content .has-primary-background-color p,
@@ -6212,11 +6158,11 @@ body.page .main-navigation {
 .entry .entry-content .has-light-gray-background-color h5,
 .entry .entry-content .has-light-gray-background-color h6,
 .entry .entry-content .has-light-gray-background-color a {
-  color: #fff;
+  color: #111;
 }
 
 .entry .entry-content .has-white-background-color {
-  color: #111;
+  color: #eee;
 }
 
 .entry .entry-content .has-white-background-color p,
@@ -6227,22 +6173,22 @@ body.page .main-navigation {
 .entry .entry-content .has-white-background-color h5,
 .entry .entry-content .has-white-background-color h6,
 .entry .entry-content .has-white-background-color a {
-  color: #111;
+  color: #eee;
 }
 
 .entry .entry-content .has-primary-background-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color.has-primary-background-color {
-  background-color: #0073aa;
+  background-color: #cc6600;
 }
 
 .entry .entry-content .has-secondary-background-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color.has-secondary-background-color {
-  background-color: #005177;
+  background-color: #994d00;
 }
 
 .entry .entry-content .has-dark-gray-background-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color.has-dark-gray-background-color {
-  background-color: #111;
+  background-color: #eee;
 }
 
 .entry .entry-content .has-light-gray-background-color,
@@ -6258,19 +6204,19 @@ body.page .main-navigation {
 .entry .entry-content .has-primary-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color p {
-  color: #0073aa;
+  color: #cc6600;
 }
 
 .entry .entry-content .has-secondary-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-secondary-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-secondary-color p {
-  color: #005177;
+  color: #994d00;
 }
 
 .entry .entry-content .has-dark-gray-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-dark-gray-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-dark-gray-color p {
-  color: #111;
+  color: #eee;
 }
 
 .entry .entry-content .has-light-gray-color,
@@ -6347,7 +6293,7 @@ svg {
 .wp-caption-text {
   color: #767676;
   font-size: 0.71111em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;
@@ -6444,7 +6390,7 @@ svg {
 .gallery-caption {
   display: block;
   font-size: 0.71111em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Chalkboard", "MS Comic Sans", "Comic Sans", cursive, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;
@@ -6457,5 +6403,5 @@ svg {
 }
 
 .gallery-item > div > a:focus {
-  box-shadow: 0 0 0 2px #0073aa;
+  box-shadow: 0 0 0 2px #cc6600;
 }

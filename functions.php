@@ -332,6 +332,12 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Style packs.
+ */
+require get_template_directory() . '/inc/class-newspack-style-packs-core.php';
+require get_template_directory() . '/inc/style-packs.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {

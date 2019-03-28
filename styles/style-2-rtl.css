@@ -347,7 +347,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #111;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Georgia, serif;
   font-weight: 400;
   font-size: 1em;
   line-height: 1.6;
@@ -361,7 +361,7 @@ select,
 optgroup,
 textarea {
   color: #111;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Georgia, serif;
   font-weight: 400;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
@@ -393,7 +393,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
 }
 
 .main-navigation,
@@ -420,7 +420,7 @@ h6 {
 }
 
 .page-title {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Georgia, serif;
 }
 
 .site-branding,
@@ -541,7 +541,7 @@ i {
 }
 
 blockquote cite {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 0.71111em;
   font-style: normal;
 }
@@ -594,11 +594,11 @@ html {
 }
 
 ::-moz-selection {
-  background-color: #bfebfb;
+  background-color: #daf0f9;
 }
 
 ::selection {
-  background-color: #bfebfb;
+  background-color: #daf0f9;
 }
 
 *,
@@ -613,12 +613,12 @@ body {
 
 a {
   transition: color 110ms ease-in-out;
-  color: #111;
+  color: #6cc4e8;
 }
 
 a:hover,
 a:active {
-  color: black;
+  color: #202944;
   outline: 0;
   text-decoration: none;
 }
@@ -647,7 +647,7 @@ hr {
 
 ul,
 ol {
-  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 ul {
@@ -668,7 +668,7 @@ li {
 
 li > ul,
 li > ol {
-  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 dt {
@@ -690,9 +690,9 @@ figure {
 }
 
 blockquote {
-  border-left: 2px solid #111;
-  margin-left: 0;
-  padding: 0 0 0 1rem;
+  border-right: 2px solid #6cc4e8;
+  margin-right: 0;
+  padding: 0 1rem 0 0;
 }
 
 blockquote > p {
@@ -707,7 +707,7 @@ table {
   margin: 0 0 1rem;
   border-collapse: collapse;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
 }
 
 table td,
@@ -724,12 +724,12 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   transition: background 150ms ease-in-out;
-  background: #00aeef;
+  background: #6cc4e8;
   border: none;
   border-radius: 5px;
   box-sizing: border-box;
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 0.88889em;
   font-weight: 700;
   line-height: 1.2;
@@ -744,7 +744,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background: #111;
+  background: #202944;
   cursor: pointer;
 }
 
@@ -762,7 +762,7 @@ button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
-  background: #111;
+  background: #202944;
   outline: thin dotted;
   outline-offset: -4px;
 }
@@ -810,8 +810,8 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-  border-color: #111;
-  outline: thin solid rgba(17, 17, 17, 0.15);
+  border-color: #6cc4e8;
+  outline: thin solid rgba(108, 196, 232, 0.15);
   outline-offset: -4px;
 }
 
@@ -837,15 +837,15 @@ form p {
 --------------------------------------------------------------*/
 a {
   transition: color 110ms ease-in-out;
-  color: #111;
+  color: #6cc4e8;
 }
 
 a:visited {
-  color: #111;
+  color: #0073aa;
 }
 
 a:hover, a:active {
-  color: black;
+  color: #202944;
   outline: 0;
   text-decoration: none;
 }
@@ -891,7 +891,7 @@ body.page .main-navigation {
   border: none;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
@@ -923,24 +923,24 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu > li {
-  color: #111;
+  color: #6cc4e8;
   display: inline;
   position: relative;
 }
 
 .main-navigation .main-menu > li > a {
   font-weight: 700;
-  color: #111;
-  margin-right: 0.5rem;
+  color: #6cc4e8;
+  margin-left: 0.5rem;
 }
 
 .main-navigation .main-menu > li > a + svg {
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .main-navigation .main-menu > li > a:hover,
 .main-navigation .main-menu > li > a:hover + svg {
-  color: black;
+  color: #202944;
 }
 
 .main-navigation .main-menu > li.menu-item-has-children {
@@ -955,7 +955,7 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu > li.menu-item-has-children > a {
-  margin-right: 0.125rem;
+  margin-left: 0.125rem;
 }
 
 .main-navigation .main-menu > li.menu-item-has-children > a:after,
@@ -966,7 +966,7 @@ body.page .main-navigation {
 
 .main-navigation .main-menu > li.menu-item-has-children .submenu-expand {
   display: inline-block;
-  margin-right: 0.25rem;
+  margin-left: 0.25rem;
   /* Priority+ Menu */
 }
 
@@ -976,7 +976,7 @@ body.page .main-navigation {
   line-height: 1.2;
   width: 24px;
   padding: 0;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .main-navigation .main-menu > li.menu-item-has-children .submenu-expand.main-menu-more-toggle svg {
@@ -997,17 +997,17 @@ body.page .main-navigation {
 
 .main-navigation .main-menu > li:last-child > a,
 .main-navigation .main-menu > li:last-child.menu-item-has-children .submenu-expand {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .main-navigation .sub-menu {
-  background-color: #111;
+  background-color: #6cc4e8;
   color: #fff;
   list-style: none;
-  padding-left: 0;
+  padding-right: 0;
   position: absolute;
   opacity: 0;
-  left: -9999px;
+  right: -9999px;
   z-index: 99999;
 }
 
@@ -1030,7 +1030,7 @@ body.page .main-navigation {
   display: inline-block;
   position: absolute;
   width: calc( 24px + 1rem);
-  right: 0;
+  left: 0;
   top: calc( .125 * 1rem);
   bottom: 0;
   color: white;
@@ -1043,7 +1043,7 @@ body.page .main-navigation {
 }
 
 .main-navigation .sub-menu > li.menu-item-has-children .submenu-expand {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1058,27 +1058,27 @@ body.page .main-navigation {
   display: block;
   line-height: 1.2;
   text-shadow: none;
-  padding: calc( .5 * 1rem) calc( 24px + 1rem) calc( .5 * 1rem) 1rem;
+  padding: calc( .5 * 1rem) 1rem calc( .5 * 1rem) calc( 24px + 1rem);
   white-space: nowrap;
 }
 
 .main-navigation .sub-menu > li > a:hover, .main-navigation .sub-menu > li > a:focus,
 .main-navigation .sub-menu > li > .menu-item-link-return:hover,
 .main-navigation .sub-menu > li > .menu-item-link-return:focus {
-  background: black;
+  background: #202944;
 }
 
 .main-navigation .sub-menu > li > a:hover:after, .main-navigation .sub-menu > li > a:focus:after,
 .main-navigation .sub-menu > li > .menu-item-link-return:hover:after,
 .main-navigation .sub-menu > li > .menu-item-link-return:focus:after {
-  background: black;
+  background: #202944;
 }
 
 .main-navigation .sub-menu > li > .menu-item-link-return {
   width: 100%;
   font-size: 22px;
   font-weight: normal;
-  text-align: left;
+  text-align: right;
 }
 
 .main-navigation .sub-menu > li > a:empty {
@@ -1094,34 +1094,12 @@ body.page .main-navigation {
 .main-navigation .sub-menu > li.mobile-parent-nav-menu-item svg {
   position: relative;
   top: 0.2rem;
-  margin-right: calc( .25 * 1rem);
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-  display: block;
-  left: 0;
-  margin-top: 0;
-  opacity: 1;
-  width: auto;
-  min-width: 100%;
-  /* Non-mobile position */
-  /* Nested sub-menu dashes */
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-  display: block;
-  left: 0;
-  margin-top: 0;
-  opacity: 1;
-  width: auto;
-  min-width: 100%;
-  /* Non-mobile position */
-  /* Nested sub-menu dashes */
+  margin-left: calc( .25 * 1rem);
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
   display: block;
-  left: 0;
+  right: 0;
   margin-top: 0;
   opacity: 1;
   width: auto;
@@ -1131,43 +1109,13 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-    display: block;
-    margin-top: 0;
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    right: auto;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    min-width: -moz-max-content;
-    min-width: -webkit-max-content;
-    min-width: max-content;
-    transform: none;
-  }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-    display: block;
-    margin-top: 0;
-    opacity: 1;
-    position: absolute;
-    left: 0;
-    right: auto;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    min-width: -moz-max-content;
-    min-width: -webkit-max-content;
-    min-width: max-content;
-    transform: none;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
     display: block;
     margin-top: 0;
     opacity: 1;
     position: absolute;
-    left: 0;
-    right: auto;
+    right: 0;
+    left: auto;
     top: auto;
     bottom: auto;
     height: auto;
@@ -1178,133 +1126,49 @@ body.page .main-navigation {
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-  left: 0;
-  width: 100%;
-  display: table;
-  position: absolute;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-  left: 0;
-  width: 100%;
-  display: table;
-  position: absolute;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
-  left: 0;
+  right: 0;
   width: 100%;
   display: table;
   position: absolute;
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-    right: 0;
-    left: auto;
-    display: block;
-    width: max-content;
-  }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-    right: 0;
-    left: auto;
-    display: block;
-    width: max-content;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
-    right: 0;
-    left: auto;
+    left: 0;
+    right: auto;
     display: block;
     width: max-content;
   }
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
-  display: none;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
-  display: none;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .submenu-expand {
   display: none;
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  display: block;
-  margin-top: inherit;
-  position: relative;
-  width: 100%;
-  left: 0;
-  opacity: 1;
-  /* Non-mobile position */
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  display: block;
-  margin-top: inherit;
-  position: relative;
-  width: 100%;
-  left: 0;
-  opacity: 1;
-  /* Non-mobile position */
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   display: block;
   margin-top: inherit;
   position: relative;
   width: 100%;
-  left: 0;
+  right: 0;
   opacity: 1;
   /* Non-mobile position */
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-    float: none;
-    max-width: 100%;
-  }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-    float: none;
-    max-width: 100%;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
     float: none;
     max-width: 100%;
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  counter-reset: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  counter-reset: submenu;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   counter-reset: submenu;
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-weight: normal;
-  content: "– " counters(submenu, "– ", none);
-  counter-increment: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  font-weight: normal;
-  content: "– " counters(submenu, "– ", none);
-  counter-increment: submenu;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu > li > a::before {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Georgia, serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -1314,7 +1178,7 @@ body.page .main-navigation {
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu,
 .main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu {
   display: block;
-  left: 0;
+  right: 0;
   margin-top: 0;
   opacity: 1;
   width: auto;
@@ -1332,8 +1196,8 @@ body.page .main-navigation {
     margin-top: 0;
     opacity: 1;
     position: absolute;
-    left: 0;
-    right: auto;
+    right: 0;
+    left: auto;
     top: auto;
     bottom: auto;
     height: auto;
@@ -1347,7 +1211,7 @@ body.page .main-navigation {
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu.hidden-links,
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu.hidden-links,
 .main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu.hidden-links {
-  left: 0;
+  right: 0;
   width: 100%;
   display: table;
   position: absolute;
@@ -1357,8 +1221,8 @@ body.page .main-navigation {
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu.hidden-links,
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu.hidden-links,
   .main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu.hidden-links {
-    right: 0;
-    left: auto;
+    left: 0;
+    right: auto;
     display: table;
     width: max-content;
   }
@@ -1377,7 +1241,7 @@ body.page .main-navigation {
   margin-top: inherit;
   position: relative;
   width: 100%;
-  left: 0;
+  right: 0;
   opacity: 1;
   /* Non-mobile position */
 }
@@ -1400,7 +1264,7 @@ body.page .main-navigation {
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):hover > .sub-menu .sub-menu > li > a::before,
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus > .sub-menu .sub-menu > li > a::before,
 .main-navigation .main-menu .menu-item-has-children.is-focused:not(.off-canvas) > .sub-menu .sub-menu > li > a::before {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Georgia, serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -1411,14 +1275,14 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu .menu-item-has-children.off-canvas .sub-menu .submenu-expand .svg-icon {
-  transform: rotate(270deg);
+  transform: rotate(-270deg);
 }
 
 .main-navigation .main-menu .menu-item-has-children.off-canvas .sub-menu .sub-menu {
   opacity: 0;
   position: absolute;
   z-index: 0;
-  transform: translateX(-100%);
+  transform: translateX(100%);
 }
 
 .main-navigation .main-menu .menu-item-has-children.off-canvas .sub-menu li:hover,
@@ -1437,11 +1301,11 @@ body.page .main-navigation {
   display: table;
   margin-top: 0;
   opacity: 1;
-  padding-left: 0;
+  padding-right: 0;
   /* Mobile position */
-  left: 0;
-  top: 0;
   right: 0;
+  top: 0;
+  left: 0;
   bottom: 0;
   position: fixed;
   z-index: 100000;
@@ -1449,7 +1313,7 @@ body.page .main-navigation {
   width: 100vw;
   height: 100vh;
   max-width: 100vw;
-  transform: translateX(100%);
+  transform: translateX(-100%);
   animation: slide_in_right 0.3s forwards;
   /* Prevent menu from being blocked by admin bar */
 }
@@ -1501,7 +1365,7 @@ body.page .main-navigation {
 /* Social menu */
 .social-navigation {
   margin-top: calc(1rem / 2);
-  text-align: left;
+  text-align: right;
 }
 
 .social-navigation ul.social-links-menu {
@@ -1521,7 +1385,7 @@ body.page .main-navigation {
 }
 
 .social-navigation ul.social-links-menu li:nth-child(n+2) {
-  margin-left: 0.1em;
+  margin-right: 0.1em;
 }
 
 .social-navigation ul.social-links-menu li a {
@@ -1551,7 +1415,7 @@ body.page .main-navigation {
 }
 
 .social-navigation ul.social-links-menu li a svg#ui-icon-link {
-  transform: rotate(-45deg);
+  transform: rotate(45deg);
 }
 
 @media only screen and (min-width: 768px) {
@@ -1572,12 +1436,12 @@ body.page .main-navigation {
 
 .footer-navigation .footer-menu {
   display: inline;
-  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer-navigation .footer-menu li {
   display: inline;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 /*--------------------------------------------------------------
@@ -1641,7 +1505,7 @@ body.page .main-navigation {
 }
 
 .post-navigation .nav-links a:hover {
-  color: black;
+  color: #202944;
 }
 
 @media only screen and (min-width: 1168px) {
@@ -1676,7 +1540,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 1168px) {
   .post-navigation .nav-links .nav-next {
     order: 2;
-    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -1707,11 +1571,11 @@ body.page .main-navigation {
 }
 
 .pagination .nav-links > *.dots, .pagination .nav-links > *.prev {
-  padding-left: 0;
+  padding-right: 0;
 }
 
 .pagination .nav-links > *.dots, .pagination .nav-links > *.next {
-  padding-right: 0;
+  padding-left: 0;
 }
 
 .pagination .nav-links a:focus {
@@ -1736,7 +1600,7 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .pagination .nav-links {
-    margin-left: 0 auto;
+    margin-right: 0 auto;
     padding: 0;
   }
   .pagination .nav-links .prev > *,
@@ -1758,7 +1622,7 @@ body.page .main-navigation {
 .comment-navigation .nav-next {
   min-width: 50%;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-weight: bold;
 }
 
@@ -1783,7 +1647,7 @@ body.page .main-navigation {
 }
 
 .comment-navigation .nav-next {
-  text-align: right;
+  text-align: left;
 }
 
 /*--------------------------------------------------------------
@@ -1809,7 +1673,7 @@ body.page .main-navigation {
 
 .infinite-loader .spinner {
   margin: 0 auto;
-  left: inherit !important;
+  right: inherit !important;
 }
 
 .site-main #infinite-handle {
@@ -1827,12 +1691,12 @@ body.page .main-navigation {
 .site-main #infinite-handle span button:hover,
 .site-main #infinite-handle span button:focus {
   transition: background 150ms ease-in-out;
-  background: #00aeef;
+  background: #6cc4e8;
   border: none;
   border-radius: 5px;
   box-sizing: border-box;
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-weight: 700;
   line-height: 1.2;
   outline: none;
@@ -1844,7 +1708,7 @@ body.page .main-navigation {
 .site-main #infinite-handle span button:hover,
 .site-main #infinite-handle span button:hover:hover,
 .site-main #infinite-handle span button:focus:hover {
-  background: #111;
+  background: #202944;
   cursor: pointer;
 }
 
@@ -1858,7 +1722,7 @@ body.page .main-navigation {
 .site-main #infinite-handle span button:focus,
 .site-main #infinite-handle span button:hover:focus,
 .site-main #infinite-handle span button:focus:focus {
-  background: #111;
+  background: #202944;
   outline: thin dotted;
   outline-offset: -4px;
 }
@@ -1895,7 +1759,7 @@ body.page .main-navigation {
   font-size: 0.875rem;
   font-weight: bold;
   height: auto;
-  left: 5px;
+  right: 5px;
   line-height: normal;
   padding: 15px 23px 14px;
   text-decoration: none;
@@ -1912,29 +1776,23 @@ body.page .main-navigation {
 
 /* Alignments */
 .alignleft {
-  /*rtl:ignore*/
   float: left;
-  /*rtl:ignore*/
   margin-right: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
   .alignleft {
-    /*rtl:ignore*/
     margin-right: calc(2 * 1rem);
   }
 }
 
 .alignright {
-  /*rtl:ignore*/
   float: right;
-  /*rtl:ignore*/
   margin-left: 1rem;
 }
 
 @media only screen and (min-width: 768px) {
   .alignright {
-    /*rtl:ignore*/
     margin-left: calc(2 * 1rem);
   }
 }
@@ -1942,8 +1800,8 @@ body.page .main-navigation {
 .aligncenter {
   clear: both;
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 /* Clearings */
@@ -1988,7 +1846,7 @@ body.page .main-navigation {
 ## Header
 --------------------------------------------------------------*/
 .site-header {
-  background: #ffcf31;
+  background: transparent;
   padding: 1em;
 }
 
@@ -2179,13 +2037,13 @@ body.page .main-navigation {
 
 .site-header.featured-image .site-featured-image .post-thumbnail img {
   height: auto;
-  left: 50%;
+  right: 50%;
   max-width: 1000%;
   min-height: 100%;
   min-width: 100vw;
   position: absolute;
   top: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(50%) translateY(-50%);
   width: auto;
   z-index: 1;
 }
@@ -2193,7 +2051,7 @@ body.page .main-navigation {
 @supports (object-fit: cover) {
   .site-header.featured-image .site-featured-image .post-thumbnail img {
     height: 100%;
-    left: 0;
+    right: 0;
     object-fit: cover;
     top: 0;
     transform: none;
@@ -2204,8 +2062,8 @@ body.page .main-navigation {
 .site-header.featured-image .site-featured-image .entry-header {
   margin-top: calc( 4 * 1rem);
   margin-bottom: 0;
-  margin-left: 0;
   margin-right: 0;
+  margin-left: 0;
   /* Entry meta */
 }
 
@@ -2223,8 +2081,8 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .site-header.featured-image .site-featured-image .entry-header {
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -2237,12 +2095,12 @@ body.page .main-navigation {
 }
 
 .site-header.featured-image .site-featured-image .entry-header .entry-meta > span {
-  margin-right: 1rem;
+  margin-left: 1rem;
   display: inline-block;
 }
 
 .site-header.featured-image .site-featured-image .entry-header .entry-meta > span:last-child {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .site-header.featured-image .site-featured-image .entry-header .entry-meta a {
@@ -2258,7 +2116,7 @@ body.page .main-navigation {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -2267,11 +2125,11 @@ body.page .main-navigation {
     position: relative;
   }
   .site-header.featured-image .site-featured-image .entry-header.has-discussion .entry-title {
-    padding-right: calc(1 * (100vw / 12) + 1rem);
+    padding-left: calc(1 * (100vw / 12) + 1rem);
   }
   .site-header.featured-image .site-featured-image .entry-header.has-discussion .entry-meta .comment-count {
     position: absolute;
-    right: 0;
+    left: 0;
   }
 }
 
@@ -2283,7 +2141,7 @@ body.page .main-navigation {
 }
 
 .sticky-post {
-  background: #00aeef;
+  background: #6cc4e8;
   color: #fff;
   display: inline-block;
   font-weight: bold;
@@ -2355,13 +2213,13 @@ body.page .main-navigation {
 
 .entry .entry-meta > span,
 .entry .entry-footer > span {
-  margin-right: 1rem;
+  margin-left: 1rem;
   display: inline-block;
 }
 
 .entry .entry-meta > span:last-child,
 .entry .entry-footer > span:last-child {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .entry .entry-meta a,
@@ -2373,7 +2231,7 @@ body.page .main-navigation {
 .entry .entry-meta a:hover,
 .entry .entry-footer a:hover {
   text-decoration: none;
-  color: #111;
+  color: #6cc4e8;
 }
 
 .entry .entry-meta .svg-icon,
@@ -2381,7 +2239,7 @@ body.page .main-navigation {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
 .entry .entry-meta {
@@ -2457,11 +2315,11 @@ body.page .main-navigation {
 .entry .entry-content .more-link:after {
   content: "\02192";
   display: inline-block;
-  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .entry .entry-content .more-link:hover {
-  color: #111;
+  color: #6cc4e8;
   text-decoration: none;
 }
 
@@ -2478,7 +2336,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content a.button:hover {
-  background: #111;
+  background: #202944;
   color: #fff;
   cursor: pointer;
 }
@@ -2566,7 +2424,7 @@ body.page .main-navigation {
 }
 
 .author-bio .author-description .author-link:hover {
-  color: black;
+  color: #202944;
   text-decoration: none;
 }
 
@@ -2643,7 +2501,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .comments-area .comments-title-wrap .discussion-meta {
     flex: 0 0 calc(2 * (100vw / 12));
-    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -2661,14 +2519,14 @@ body.page .main-navigation {
 }
 
 #respond .comment .comment-form {
-  padding-left: 0;
+  padding-right: 0;
 }
 
 #respond > small {
   display: block;
   font-size: 22px;
   position: absolute;
-  left: calc(1rem + 100%);
+  right: calc(1rem + 100%);
   top: calc(-3.5 * 1rem);
   width: calc(100vw / 12);
 }
@@ -2703,7 +2561,7 @@ body.page .main-navigation {
 
 .comment-list .children {
   margin: 0;
-  padding: 0 0 0 1rem;
+  padding: 0 1rem 0 0;
 }
 
 .comment-list > .comment:first-child {
@@ -2713,7 +2571,7 @@ body.page .main-navigation {
 .comment-list .pingback .comment-body,
 .comment-list .trackback .comment-body {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 0.71111em;
   font-weight: 500;
   margin-top: 1rem;
@@ -2725,14 +2583,14 @@ body.page .main-navigation {
   font-weight: bold;
   font-size: 19.55556px;
   line-height: 1.5;
-  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   display: block;
 }
 
 .comment-list .pingback .comment-body .comment-edit-link,
 .comment-list .trackback .comment-body .comment-edit-link {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-weight: 500;
 }
 
@@ -2751,14 +2609,14 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .comment {
-    padding-left: calc(.5 * (1rem + calc(100vw / 12 )));
+    padding-right: calc(.5 * (1rem + calc(100vw / 12 )));
   }
   .comment.depth-1,
   .comment .children {
-    padding-left: 0;
+    padding-right: 0;
   }
   .comment.depth-1 {
-    margin-left: calc(3.25 * 1rem);
+    margin-right: calc(3.25 * 1rem);
   }
 }
 
@@ -2771,18 +2629,18 @@ body.page .main-navigation {
 }
 
 .comment .comment-author .avatar {
-  float: left;
-  margin-right: 1rem;
+  float: right;
+  margin-left: 1rem;
   position: relative;
 }
 
 @media only screen and (min-width: 768px) {
   .comment .comment-author .avatar {
     float: inherit;
-    margin-right: inherit;
+    margin-left: inherit;
     position: absolute;
     top: 0;
-    right: calc(100% + 1rem);
+    left: calc(100% + 1rem);
   }
 }
 
@@ -2796,7 +2654,7 @@ body.page .main-navigation {
 }
 
 .comment .comment-author .fn a:hover {
-  color: black;
+  color: #202944;
 }
 
 .comment .comment-author .post-author-badge {
@@ -2804,15 +2662,15 @@ body.page .main-navigation {
   display: block;
   height: 18px;
   position: absolute;
-  background: #252525;
-  right: calc(100% - 2.5rem);
+  background: #8fd2ee;
+  left: calc(100% - 2.5rem);
   top: -3px;
   width: 18px;
 }
 
 @media only screen and (min-width: 768px) {
   .comment .comment-author .post-author-badge {
-    right: calc(100% + 0.75rem);
+    left: calc(100% + 0.75rem);
   }
 }
 
@@ -2839,7 +2697,7 @@ body.page .main-navigation {
 
 .comment .comment-metadata > a:hover,
 .comment .comment-metadata .comment-edit-link:hover {
-  color: black;
+  color: #202944;
   text-decoration: none;
 }
 
@@ -2860,18 +2718,18 @@ body.page .main-navigation {
 .comment .comment-metadata .edit-link svg {
   transform: scale(0.8);
   vertical-align: baseline;
-  margin-right: 0.1em;
+  margin-left: 0.1em;
 }
 
 .comment .comment-metadata .comment-edit-link {
   position: relative;
-  padding-left: 1rem;
-  margin-left: -1rem;
+  padding-right: 1rem;
+  margin-right: -1rem;
   z-index: 1;
 }
 
 .comment .comment-metadata .comment-edit-link:hover {
-  color: #111;
+  color: #6cc4e8;
 }
 
 .comment .comment-content {
@@ -2880,7 +2738,7 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 1168px) {
   .comment .comment-content {
-    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 
@@ -2893,7 +2751,7 @@ body.page .main-navigation {
 }
 
 .comment .comment-content blockquote {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .comment .comment-content a {
@@ -2911,7 +2769,7 @@ body.page .main-navigation {
 
 .comment-reply-link:hover,
 #cancel-comment-reply-link:hover {
-  color: black;
+  color: #202944;
 }
 
 .discussion-avatar-list {
@@ -2925,9 +2783,9 @@ body.page .main-navigation {
 .discussion-avatar-list li {
   position: relative;
   list-style: none;
-  margin: 0 -8px 0 0;
+  margin: 0 0 0 -8px;
   padding: 0;
-  float: left;
+  float: right;
 }
 
 .discussion-avatar-list .comment-user-avatar img {
@@ -2943,12 +2801,12 @@ body.page .main-navigation {
   vertical-align: middle;
   fill: currentColor;
   transform: scale(0.6) scaleX(-1) translateY(-0.1em);
-  margin-left: -0.25rem;
+  margin-right: -0.25rem;
 }
 
 .comment-form .comment-notes,
 .comment-form label {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 0.71111em;
   color: #767676;
 }
@@ -2957,13 +2815,13 @@ body.page .main-navigation {
   .comment-form .comment-form-author,
   .comment-form .comment-form-email {
     width: calc(50% - 0.5rem);
-    float: left;
+    float: right;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .comment-form .comment-form-email {
-    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -3063,7 +2921,7 @@ body.page .main-navigation {
 --------------------------------------------------------------*/
 /* Site footer */
 #colophon {
-  background: #ffcf31;
+  background: #a7a9ac;
 }
 
 #colophon .widget-area,
@@ -3103,13 +2961,13 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 1168px) {
   #colophon .widget-column .widget {
-    margin-right: calc(3 * 1rem);
+    margin-left: calc(3 * 1rem);
     width: calc(50% - (3 * 1rem));
   }
 }
 
 #colophon .site-info {
-  background: #111;
+  background: transparent;
   color: #767676;
 }
 
@@ -3119,12 +2977,12 @@ body.page .main-navigation {
 
 #colophon .site-info a:hover {
   text-decoration: none;
-  color: #111;
+  color: #6cc4e8;
 }
 
 #colophon .site-info .imprint,
 #colophon .site-info .privacy-policy-link {
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 /* Widgets */
@@ -3138,11 +2996,11 @@ body.page .main-navigation {
 }
 
 .widget a {
-  color: #111;
+  color: #6cc4e8;
 }
 
 .widget a:hover {
-  color: black;
+  color: #202944;
 }
 
 .widget_archive ul,
@@ -3166,7 +3024,7 @@ body.page .main-navigation {
 .widget_recent_entries ul li,
 .widget_rss ul li {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: calc(22px * 1.125);
   font-weight: 700;
   line-height: 1.2;
@@ -3193,14 +3051,14 @@ body.page .main-navigation {
 .widget_recent_comments ul ul > li > a::before,
 .widget_recent_entries ul ul > li > a::before,
 .widget_rss ul ul > li > a::before {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Georgia, serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
 }
 
 .widget_tag_cloud .tagcloud {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-weight: 700;
 }
 
@@ -3273,8 +3131,8 @@ body.page .main-navigation {
 
 .entry .entry-content > *.alignwide,
 .entry .entry-summary > *.alignwide {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   clear: both;
 }
 
@@ -3289,7 +3147,7 @@ body.page .main-navigation {
 .entry .entry-content > *.alignfull,
 .entry .entry-summary > *.alignfull {
   position: relative;
-  left: -1rem;
+  right: -1rem;
   width: calc( 100% + (2 * 1rem));
   max-width: calc( 100% + (2 * 1rem));
   clear: both;
@@ -3300,7 +3158,7 @@ body.page .main-navigation {
   .entry .entry-summary > *.alignfull {
     margin-top: calc(2 * 1rem);
     margin-bottom: calc(2 * 1rem);
-    left: calc( -12.5% - 75px);
+    right: calc( -12.5% - 75px);
     width: calc( 125% + 150px);
     max-width: calc( 125% + 150px);
   }
@@ -3308,12 +3166,10 @@ body.page .main-navigation {
 
 .entry .entry-content > *.alignleft,
 .entry .entry-summary > *.alignleft {
-  /*rtl:ignore*/
   float: left;
   max-width: calc(5 * (100vw / 12));
   margin-top: 0;
-  margin-left: 0;
-  /*rtl:ignore*/
+  margin-right: 0;
   margin-right: 1rem;
 }
 
@@ -3321,19 +3177,16 @@ body.page .main-navigation {
   .entry .entry-content > *.alignleft,
   .entry .entry-summary > *.alignleft {
     max-width: calc(4 * (100vw / 12));
-    /*rtl:ignore*/
     margin-right: calc(2 * 1rem);
   }
 }
 
 .entry .entry-content > *.alignright,
 .entry .entry-summary > *.alignright {
-  /*rtl:ignore*/
   float: right;
   max-width: calc(5 * (100vw / 12));
   margin-top: 0;
-  margin-right: 0;
-  /*rtl:ignore*/
+  margin-left: 0;
   margin-left: 1rem;
 }
 
@@ -3341,16 +3194,15 @@ body.page .main-navigation {
   .entry .entry-content > *.alignright,
   .entry .entry-summary > *.alignright {
     max-width: calc(4 * (100vw / 12));
-    margin-right: 0;
-    /*rtl:ignore*/
+    margin-left: 0;
     margin-left: calc(2 * 1rem);
   }
 }
 
 .entry .entry-content > *.aligncenter,
 .entry .entry-summary > *.aligncenter {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -3370,8 +3222,8 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .entry .entry-content > *.aligncenter,
   .entry .entry-summary > *.aligncenter {
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -3442,7 +3294,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-button .wp-block-button__link {
   transition: background 150ms ease-in-out;
   border: none;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 0.88889em;
   line-height: 1.2;
   box-sizing: border-box;
@@ -3454,7 +3306,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-button .wp-block-button__link:not(.has-background) {
-  background-color: #00aeef;
+  background-color: #6cc4e8;
 }
 
 .entry .entry-content .wp-block-button .wp-block-button__link:not(.has-text-color) {
@@ -3463,13 +3315,13 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-button .wp-block-button__link:hover {
   color: white;
-  background: #111;
+  background: #202944;
   cursor: pointer;
 }
 
 .entry .entry-content .wp-block-button .wp-block-button__link:focus {
   color: white;
-  background: #111;
+  background: #202944;
   outline: thin dotted;
   outline-offset: -4px;
 }
@@ -3495,17 +3347,17 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color),
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:focus:not(.has-text-color),
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:active:not(.has-text-color) {
-  color: #00aeef;
+  color: #6cc4e8;
   border-color: currentColor;
 }
 
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover {
   color: white;
-  border-color: #111;
+  border-color: #202944;
 }
 
 .entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:hover:not(.has-background) {
-  color: #111;
+  color: #202944;
 }
 
 .entry .entry-content .wp-block-archives,
@@ -3519,7 +3371,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-categories li,
 .entry .entry-content .wp-block-latest-posts li {
   color: #767676;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: calc(22px * 1.125);
   font-weight: bold;
   line-height: 1.2;
@@ -3551,7 +3403,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-categories li ul {
   list-style: none;
-  padding-left: 0;
+  padding-right: 0;
 }
 
 .entry .entry-content .wp-block-categories ul {
@@ -3559,7 +3411,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-categories ul > li > a::before {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Georgia, serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -3590,17 +3442,17 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-verse {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: Georgia, serif;
   font-size: 22px;
   line-height: 1.8;
 }
 
 .entry .entry-content .has-drop-cap:not(:focus):first-letter {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 3.375em;
   line-height: 1;
   font-weight: bold;
-  margin: 0 0.25em 0 0;
+  margin: 0 0 0 0.25em;
 }
 
 .entry .entry-content .wp-block-pullquote {
@@ -3614,8 +3466,8 @@ body.page .main-navigation {
   border: none;
   margin-top: calc(4 * 1rem);
   margin-bottom: calc(4.33 * 1rem);
-  margin-right: 0;
-  padding-left: 0;
+  margin-left: 0;
+  padding-right: 0;
 }
 
 .entry .entry-content .wp-block-pullquote p {
@@ -3638,7 +3490,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-pullquote cite {
   display: inline-block;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   line-height: 1.6;
   text-transform: none;
   color: #767676;
@@ -3657,7 +3509,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-pullquote.alignleft blockquote, .entry .entry-content .wp-block-pullquote.alignright blockquote {
   margin: 1rem 0;
   padding: 0;
-  text-align: left;
+  text-align: right;
   max-width: 100%;
 }
 
@@ -3666,15 +3518,15 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-pullquote.is-style-solid-color {
-  background-color: #111;
-  padding-left: 0;
+  background-color: #6cc4e8;
   padding-right: 0;
+  padding-left: 0;
 }
 
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-pullquote.is-style-solid-color {
-    padding-left: 10%;
     padding-right: 10%;
+    padding-left: 10%;
   }
 }
 
@@ -3702,9 +3554,9 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote {
   max-width: 100%;
   color: #fff;
-  padding-left: 0;
-  margin-left: 1rem;
+  padding-right: 0;
   margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-text-color p,
@@ -3714,8 +3566,8 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote {
-    margin-left: 0;
     margin-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -3727,14 +3579,14 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-pullquote.is-style-solid-color.alignfull {
-    padding-left: calc(10% + 58px + (2 * 1rem));
     padding-right: calc(10% + 58px + (2 * 1rem));
+    padding-left: calc(10% + 58px + (2 * 1rem));
   }
 }
 
 .entry .entry-content .wp-block-quote:not(.is-large), .entry .entry-content .wp-block-quote:not(.is-style-large) {
   border-width: 2px;
-  border-color: #111;
+  border-color: #6cc4e8;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -3756,7 +3608,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-quote.is-large, .entry .entry-content .wp-block-quote.is-style-large {
   margin: 1rem 0;
   padding: 0;
-  border-left: none;
+  border-right: none;
 }
 
 .entry .entry-content .wp-block-quote.is-large p, .entry .entry-content .wp-block-quote.is-style-large p {
@@ -3832,8 +3684,8 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-image.alignfull img {
     max-width: calc( 125% + 150px);
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -3857,7 +3709,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-cover .wp-block-cover-image-text,
 .entry .entry-content .wp-block-cover .wp-block-cover-text,
 .entry .entry-content .wp-block-cover h2 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 1.6875em;
   font-weight: bold;
   line-height: 1.25;
@@ -3916,8 +3768,8 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-cover-image.alignfull,
   .entry .entry-content .wp-block-cover.alignfull {
-    padding-left: calc(10% + 58px + (2 * 1rem));
     padding-right: calc(10% + 58px + (2 * 1rem));
+    padding-left: calc(10% + 58px + (2 * 1rem));
   }
   .entry .entry-content .wp-block-cover-image.alignfull .wp-block-cover-image-text,
   .entry .entry-content .wp-block-cover-image.alignfull .wp-block-cover-text,
@@ -3931,7 +3783,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-gallery {
   list-style-type: none;
-  padding-left: 0;
+  padding-right: 0;
 }
 
 .entry .entry-content .wp-block-gallery .blocks-gallery-image:last-child,
@@ -3948,7 +3800,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-image figcaption,
 .entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption,
 .entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 0.71111em;
   line-height: 1.6;
   margin: 0;
@@ -3964,7 +3816,7 @@ body.page .main-navigation {
   margin-bottom: 2rem;
   margin-top: 2rem;
   max-width: 2.25em;
-  text-align: left;
+  text-align: right;
   /* Remove duplicate rule-line when a separator
 		 * is followed by an H1, or H2 */
 }
@@ -4016,7 +3868,7 @@ body.page .main-navigation {
   color: #767676;
   font-size: 1.6875em;
   letter-spacing: 0.88889em;
-  padding-left: 0.88889em;
+  padding-right: 0.88889em;
 }
 
 .entry .entry-content .wp-block-separator + h1:before,
@@ -4036,7 +3888,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-file {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
 }
 
 .entry .entry-content .wp-block-file .wp-block-file__button {
@@ -4044,15 +3896,15 @@ body.page .main-navigation {
   transition: background 150ms ease-in-out;
   border: none;
   border-radius: 5px;
-  background: #00aeef;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background: #6cc4e8;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 22px;
   line-height: 1.2;
   text-decoration: none;
   font-weight: bold;
   padding: 0.75rem 1rem;
   color: #fff;
-  margin-left: 0;
+  margin-right: 0;
   margin-top: calc(0.75 * 1rem);
 }
 
@@ -4064,12 +3916,12 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-file .wp-block-file__button:hover {
-  background: #111;
+  background: #202944;
   cursor: pointer;
 }
 
 .entry .entry-content .wp-block-file .wp-block-file__button:focus {
-  background: #111;
+  background: #202944;
   outline: thin dotted;
   outline-offset: -4px;
 }
@@ -4085,8 +3937,8 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-columns.alignfull {
-  padding-left: 1rem;
   padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -4103,20 +3955,20 @@ body.page .main-navigation {
     margin-bottom: 0;
   }
   .entry .entry-content .wp-block-columns[class*='has-'] > * {
-    margin-right: 1rem;
+    margin-left: 1rem;
   }
   .entry .entry-content .wp-block-columns[class*='has-'] > *:last-child {
-    margin-right: 0;
+    margin-left: 0;
   }
   .entry .entry-content .wp-block-columns.alignfull,
   .entry .entry-content .wp-block-columns.alignfull .wp-block-column {
-    padding-left: calc(2 * 1rem);
     padding-right: calc(2 * 1rem);
+    padding-left: calc(2 * 1rem);
   }
 }
 
 .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-weight: bold;
 }
 
@@ -4209,12 +4061,12 @@ body.page .main-navigation {
 
 .entry .entry-content .has-primary-background-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color.has-primary-background-color {
-  background-color: #111;
+  background-color: #6cc4e8;
 }
 
 .entry .entry-content .has-secondary-background-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color.has-secondary-background-color {
-  background-color: black;
+  background-color: #40b2e1;
 }
 
 .entry .entry-content .has-dark-gray-background-color,
@@ -4235,13 +4087,13 @@ body.page .main-navigation {
 .entry .entry-content .has-primary-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-primary-color p {
-  color: #111;
+  color: #6cc4e8;
 }
 
 .entry .entry-content .has-secondary-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-secondary-color,
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-secondary-color p {
-  color: black;
+  color: #40b2e1;
 }
 
 .entry .entry-content .has-dark-gray-color,
@@ -4304,27 +4156,27 @@ svg {
 @media only screen and (min-width: 768px) {
   .wp-caption.aligncenter {
     position: relative;
-    left: calc( calc(8 * (100vw / 12) - 28px) / 2);
-    transform: translateX(-50%);
+    right: calc( calc(8 * (100vw / 12) - 28px) / 2);
+    transform: translateX(50%);
   }
 }
 
 @media only screen and (min-width: 1168px) {
   .wp-caption.aligncenter {
-    left: calc( calc(6 * (100vw / 12) - 28px) / 2);
+    right: calc( calc(6 * (100vw / 12) - 28px) / 2);
   }
 }
 
 .wp-caption img[class*="wp-image-"] {
   display: block;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 
 .wp-caption-text {
   color: #767676;
   font-size: 0.71111em;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;
@@ -4343,7 +4195,7 @@ svg {
 
 .gallery-item {
   display: inline-block;
-  margin-right: 16px;
+  margin-left: 16px;
   margin-bottom: 16px;
   text-align: center;
   vertical-align: top;
@@ -4355,7 +4207,7 @@ svg {
 }
 
 .gallery-columns-2 .gallery-item:nth-of-type(2n+2) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-columns-3 .gallery-item {
@@ -4363,7 +4215,7 @@ svg {
 }
 
 .gallery-columns-3 .gallery-item:nth-of-type(3n+3) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-columns-4 .gallery-item {
@@ -4371,7 +4223,7 @@ svg {
 }
 
 .gallery-columns-4 .gallery-item:nth-of-type(4n+4) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-columns-5 .gallery-item {
@@ -4379,7 +4231,7 @@ svg {
 }
 
 .gallery-columns-5 .gallery-item:nth-of-type(5n+5) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-columns-6 .gallery-item {
@@ -4387,7 +4239,7 @@ svg {
 }
 
 .gallery-columns-6 .gallery-item:nth-of-type(6n+6) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-columns-7 .gallery-item {
@@ -4395,7 +4247,7 @@ svg {
 }
 
 .gallery-columns-7 .gallery-item:nth-of-type(7n+7) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-columns-8 .gallery-item {
@@ -4403,7 +4255,7 @@ svg {
 }
 
 .gallery-columns-8 .gallery-item:nth-of-type(8n+8) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-columns-9 .gallery-item {
@@ -4411,16 +4263,16 @@ svg {
 }
 
 .gallery-columns-9 .gallery-item:nth-of-type(9n+9) {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 .gallery-item:last-of-type {
-  padding-right: 0;
+  padding-left: 0;
 }
 
 .gallery-caption {
   display: block;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Serif Pro", Georgia, serif;
   font-size: 0.71111em;
   line-height: 1.6;
   margin: 0;
@@ -4434,5 +4286,5 @@ svg {
 }
 
 .gallery-item > div > a:focus {
-  box-shadow: 0 0 0 2px #111111;
+  box-shadow: 0 0 0 2px #6cc4e8;
 }

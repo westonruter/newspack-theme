@@ -2,6 +2,8 @@
 
 #colophon {
 
+	background: $color__background-footer-top;
+
 	.widget-area,
 	.site-info {
 		@include postContentMaxWidth();
@@ -25,6 +27,7 @@
 	}
 
 	.site-info {
+		background: $color__background-footer-bottom;
 		color: $color__text-light;
 
 		a {

@@ -44,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 700;
+	font-weight: $font__heading_weight;
 	line-height: $font__line-height-heading;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

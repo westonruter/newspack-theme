@@ -39,6 +39,11 @@ new Newspack_Style_Packs_Core(
 
 		// Style fonts
 		'fonts'              => array(
+			'style-1' => array(
+				'Alegreya Sans' => 'https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700,900',
+				'Raleway'       => 'https://fonts.googleapis.com/css?family=Raleway:400,400i,700,900',
+				'Lato'          => 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,900',
+			),
 			'style-2' => array(
 				'Raleway'          => 'https://fonts.googleapis.com/css?family=Raleway:400,400i,700',
 				'Roboto Condensed' => 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700',

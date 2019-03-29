@@ -1,2 +1,14 @@
 @import "variables-style/variables-style";
 @import "../../../style-base.scss";
+
+/* Style-pack specific overrides */
+
+.main-navigation {
+	font-family: "Roboto Condensed";
+}
+
+.main-navigation .main-menu > li,
+.main-navigation .main-menu > li > a {
+	color: $color__background-button-hover;
+}
+

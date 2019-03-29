@@ -4,7 +4,9 @@
 	margin: $size__spacing-unit $size__spacing-unit calc(3 * #{$size__spacing-unit});
 
 	@include media(tablet) {
-		margin: 0 $size__site-margins $size__site-margins;
+		//margin: 0 auto $size__site-margins;
+		margin: 0 auto $size__spacing-unit;
+		@include postContentMaxWidth();
 	}
 
 	.page-title {
@@ -55,7 +57,8 @@
 		margin: calc(3 * #{$size__spacing-unit}) #{$size__spacing-unit};
 
 		@include media(tablet) {
-			margin: calc(3 * #{$size__spacing-unit}) $size__site-margins calc(#{ $size__spacing-unit } / 2);
+			margin: calc(3 * #{$size__spacing-unit}) auto calc(#{ $size__spacing-unit } / 2);
+			@include postContentMaxWidth();
 		}
 	}
 

@@ -38,7 +38,8 @@
 	position: relative;
 
 	@include media(tablet) {
-		margin: 0 $size__site-margins;
+		margin: 0 auto;
+		@include postContentMaxWidth();
 	}
 }
 

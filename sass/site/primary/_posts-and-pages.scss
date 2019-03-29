@@ -45,8 +45,6 @@
 
 	.entry-title {
 
-		margin: 0;
-
 		a {
 			color: inherit;
 
@@ -134,15 +132,14 @@
 
 	.entry-content,
 	.entry-summary {
-		max-width: calc(100% - (2 * #{ $size__spacing-unit }));
 		margin: 0 $size__spacing-unit;
 
 		@include media(tablet) {
-			max-width: 80%;
-			margin: 0 10%;
-			padding: 0 60px;
+			margin: 0 auto;
+			@include postContentMaxWidth();
 		}
 	}
+
 
 	.entry-content {
 

@@ -22,21 +22,15 @@ $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
 
-//$color__text-header: ;
-//$color__text-footer: ;
-
 // Links
 $color__link: #111;
 $color__link-visited: #111;
-$color__link-hover: darken( $color__link, 10% );
-
-//$color__link-header: ;
-//$color__link-footer: ;
+$color__link-hover: lighten( $color__link, 15% );
 
 // Borders
 $color__border: #ccc;
 $color__border-link: #111;
-$color__border-link-hover: darken( $color__link, 10% );
+$color__border-link-hover: lighten( $color__link, 15% );
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;

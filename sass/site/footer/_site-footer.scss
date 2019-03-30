@@ -5,12 +5,21 @@
 	background: $color__background-footer-top;
 
 	.widget-area,
-	.site-info {
+	.site-info-contain {
 		@include postContentMaxWidth();
 		margin: calc(2 * #{$size__spacing-unit}) $size__spacing-unit;
 
 		@include media(tablet) {
 			margin: calc(1.5 * #{$size__spacing-unit}) auto;
+		}
+	}
+
+	.site-info-contain {
+		margin-bottom: 0;
+		padding: calc(2 * #{$size__spacing-unit}) 0;
+
+		@include media(tablet) {
+			padding: calc(1.5 * #{$size__spacing-unit}) 0;
 		}
 	}
 
@@ -31,7 +40,7 @@
 		color: $color__text-light;
 
 		a {
-			color: inherit;
+			color: $color__link;
 
 			&:hover {
 				text-decoration: none;

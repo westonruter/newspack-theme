@@ -261,5 +261,7 @@ function newspack_custom_colors_css() {
 	 * @param int    $primary_color The user's selected color hue.
 	 * @param string $saturation    Filtered theme color saturation level.
 	 */
-	return apply_filters( 'newspack_custom_colors_css', $theme_css, $primary_color, $saturation );
+	if ( 'default' !== get_theme_mod( 'primary_color', 'default' ) ) {
+		return apply_filters( 'newspack_custom_colors_css', $theme_css, $primary_color, $saturation );
+	}
 }

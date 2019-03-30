@@ -17,12 +17,6 @@ new Newspack_Style_Packs_Core(
 		// JavaScript directory
 		'js_directory'       => 'js',
 
-		// Use thumbnails
-		'style_thumbs'       => array(
-			'width'  => 200 / 2,
-			'height' => 230 / 2,
-		),
-
 		// Style declarations
 		'styles'             => array(
 			'default' => esc_html__( 'Default Style', 'newspack' ),
@@ -40,9 +34,8 @@ new Newspack_Style_Packs_Core(
 		// Style fonts
 		'fonts'              => array(
 			'style-1' => array(
-				'Alegreya Sans' => 'https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700,900',
-				'Raleway'       => 'https://fonts.googleapis.com/css?family=Raleway:400,400i,700,900',
-				'Lato'          => 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,900',
+				'Lato'       => 'https://fonts.googleapis.com/css?family=Lato:400,400i,700,900',
+				'Noto Serif' => 'https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700',
 			),
 			'style-2' => array(
 				'Raleway'          => 'https://fonts.googleapis.com/css?family=Raleway:400,400i,700',

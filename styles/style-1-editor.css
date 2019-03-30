@@ -10,10 +10,6 @@ Newspack Theme Editor Styles
 /* Calculates maximum width for post content */
 /* Nested sub-menu padding: 10 levels deep */
 /** === Editor Frame === */
-body {
-  background: #fff;
-}
-
 body .wp-block[data-align="full"] {
   width: 100%;
 }
@@ -26,10 +22,6 @@ body .wp-block[data-align="full"] {
 }
 
 @media only screen and (min-width: 768px) {
-  body .editor-writing-flow {
-    max-width: 80%;
-    margin: 0 10%;
-  }
   body .editor-post-title__block,
   body .editor-default-block-appender,
   body .editor-block-list__block {
@@ -37,13 +29,7 @@ body .wp-block[data-align="full"] {
     margin-right: auto;
   }
   body .wp-block[data-align="wide"] {
-    width: 100%;
-  }
-  body .wp-block[data-align="full"] {
-    position: relative;
-    left: calc( -12.5% - 14px);
-    width: calc( 125% + 116px);
-    max-width: calc( 125% + 115px);
+    max-width: 1200px;
   }
   body .wp-block[data-align="right"] {
     max-width: 125%;
@@ -52,30 +38,17 @@ body .wp-block[data-align="full"] {
 
 /** === Content Width === */
 .wp-block {
-  width: calc(100vw - (2 * 1rem));
-  max-width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  .wp-block {
-    width: calc(8 * (100vw / 12));
-  }
-}
-
-@media only screen and (min-width: 1168px) {
-  .wp-block {
-    width: calc(6 * (100vw / 12 ));
-  }
+  max-width: 960px;
 }
 
 .wp-block .wp-block {
-  width: 100%;
+  max-width: 100%;
 }
 
 /** === Base Typography === */
 body {
   font-size: 22px;
-  font-family: Georgia, serif;
+  font-family: "Noto Serif", Georgia, serif;
   line-height: 1.6;
   color: #111;
 }
@@ -90,7 +63,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, "Helvetica Neue", sans-serif;
   font-weight: 700;
 }
 
@@ -136,7 +109,7 @@ a {
 }
 
 a:hover, a:active {
-  color: black;
+  color: #373737;
   outline: 0;
   text-decoration: none;
 }
@@ -205,7 +178,7 @@ a:focus {
 
 figcaption,
 .gallery-caption {
-  font-family: "Lato", "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, "Helvetica Neue", sans-serif;
   font-size: 0.71111em;
   line-height: 1.6;
   color: #767676;
@@ -222,7 +195,7 @@ figcaption,
 }
 
 .editor-post-title__block .editor-post-title__input {
-  font-family: "Lato", "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, "Helvetica Neue", sans-serif;
   color: #111;
   font-size: 2.8125em;
   font-weight: 700;
@@ -230,7 +203,7 @@ figcaption,
 
 /** === Default Appender === */
 .editor-default-block-appender .editor-default-block-appender__content {
-  font-family: Georgia, serif;
+  font-family: "Noto Serif", Georgia, serif;
   font-size: 22px;
 }
 
@@ -241,7 +214,7 @@ figcaption,
 
 /** === Paragraph === */
 .wp-block-paragraph.has-drop-cap:not(:focus)::first-letter {
-  font-family: "Lato", "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, "Helvetica Neue", sans-serif;
   font-size: 3.375em;
   line-height: 1;
   font-weight: bold;
@@ -250,13 +223,13 @@ figcaption,
 
 /** === Table === */
 .wp-block-table {
-  font-family: "Lato", "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, "Helvetica Neue", sans-serif;
 }
 
 /** === Cover === */
 .wp-block-cover h2,
 .wp-block-cover .wp-block-cover-text {
-  font-family: "Lato", "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, "Helvetica Neue", sans-serif;
   font-size: 1.6875em;
   font-weight: bold;
   line-height: 1.4;
@@ -350,7 +323,7 @@ figcaption,
 /** === Button === */
 .wp-block-button .wp-block-button__link {
   line-height: 1.8;
-  font-family: "Lato", "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, "Helvetica Neue", sans-serif;
   font-size: 0.88889em;
   font-weight: bold;
 }
@@ -398,7 +371,7 @@ figcaption,
 .wp-block-quote cite,
 .wp-block-quote footer,
 .wp-block-quote .wp-block-quote__citation {
-  font-family: "Lato", "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, "Helvetica Neue", sans-serif;
   font-size: 0.71111em;
   line-height: 1.6;
   color: #767676;
@@ -480,7 +453,7 @@ figcaption,
 .wp-block[data-type="core/pullquote"] .wp-block-pullquote__citation,
 .wp-block[data-type="core/pullquote"][data-align="left"] .wp-block-pullquote__citation,
 .wp-block[data-type="core/pullquote"][data-align="right"] .wp-block-pullquote__citation {
-  font-family: "Lato", "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, "Helvetica Neue", sans-serif;
   font-size: 0.71111em;
   line-height: 1.6;
   text-transform: none;
@@ -527,7 +500,7 @@ figcaption,
 
 /** === File === */
 .wp-block-file {
-  font-family: "Lato", "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, "Helvetica Neue", sans-serif;
 }
 
 .wp-block-file .wp-block-file__textlink {
@@ -536,7 +509,7 @@ figcaption,
 }
 
 .wp-block-file .wp-block-file__textlink:hover {
-  color: black;
+  color: #373737;
   text-decoration: none;
 }
 
@@ -614,7 +587,7 @@ ul.wp-block-archives li,
 .wp-block-categories li,
 .wp-block-latest-posts li {
   color: #767676;
-  font-family: "Lato", "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, "Helvetica Neue", sans-serif;
   font-size: calc(22px * 1.125);
   font-weight: bold;
   line-height: 1.2;
@@ -650,7 +623,7 @@ ul.wp-block-archives li ul,
 }
 
 .wp-block-categories ul ul > li > a::before {
-  font-family: Georgia, serif;
+  font-family: "Noto Serif", Georgia, serif;
   font-weight: normal;
   content: "– " counters(submenu, "– ", none);
   counter-increment: submenu;
@@ -683,7 +656,7 @@ ul.wp-block-archives li ul,
 
 /** === Latest Comments === */
 .wp-block-latest-comments .wp-block-latest-comments__comment-meta {
-  font-family: "Lato", "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, "Helvetica Neue", sans-serif;
   font-weight: bold;
 }
 
@@ -706,7 +679,7 @@ ul.wp-block-archives li ul,
 .wp-caption dd {
   color: #767676;
   font-size: 0.71111em;
-  font-family: "Lato", "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, "Helvetica Neue", sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0.5rem;
@@ -725,7 +698,7 @@ ul.wp-block-archives li ul,
 }
 
 .wp-block-freeform blockquote cite {
-  font-family: "Lato", "Alegreya Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", -apple-system, "Helvetica Neue", sans-serif;
   font-size: 0.71111em;
   font-style: normal;
   line-height: 1.6;

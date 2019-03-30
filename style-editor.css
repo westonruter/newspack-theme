@@ -10,10 +10,6 @@ Newspack Theme Editor Styles
 /* Calculates maximum width for post content */
 /* Nested sub-menu padding: 10 levels deep */
 /** === Editor Frame === */
-body {
-  background: #fff;
-}
-
 body .wp-block[data-align="full"] {
   width: 100%;
 }

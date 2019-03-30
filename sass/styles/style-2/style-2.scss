@@ -12,3 +12,19 @@
 	color: $color__background-button-hover;
 }
 
+#colophon {
+	.widget,
+	.site-info {
+		a {
+			color: $color__text-main;
+		}
+
+		a:hover {
+			color: #fff;
+		}
+	}
+
+	.site-info {
+		font-family: "Roboto Condensed";
+	}
+}

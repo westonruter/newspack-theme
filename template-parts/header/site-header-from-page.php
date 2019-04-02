@@ -5,21 +5,28 @@
  * @package Newspack
  */
 ?>
-<div class="site-branding">
-	<?php
-	$site_header = new WP_Query(
-		array(
-			'pagename' => 'newspack-header',
-		)
-	);
 
-	// The Loop
-	if ( $site_header->have_posts() ) {
-		while ( $site_header->have_posts() ) {
-			$site_header->the_post();
-			the_content();
-		}
-		wp_reset_postdata();
+<?php
+$header_id = get_theme_mod( 'newspack_header_page' );
+
+if ( ! $header_id ) {
+	return;
+}
+
+// The Query
+$header_query = new WP_Query(
+	array(
+		'page_id' => $header_id,
+	)
+);
+
+// The Loop
+if ( $header_query->have_posts() ) {
+	echo '<div class="site-branding">';
+	while ( $header_query->have_posts() ) {
+		$header_query->the_post();
+		the_content();
 	}
-	?>
-</div><!-- .site-branding -->
+	echo '</div><!-- .site-branding -->';
+}
+wp_reset_postdata();

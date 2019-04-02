@@ -34,6 +34,69 @@ function newspack_customize_register( $wp_customize ) {
 	}
 
 	/**
+	 * Header and Footer
+	 */
+	$wp_customize->add_section(
+		'newspack_header_footer_options',
+		array(
+			'title'       => esc_html__( 'Header and Footer', 'newspack' ),
+			'priority'    => 130,
+			'description' => esc_html__( 'Pick a page to assign to the header and footer areas.', 'newspack' ),
+		)
+	);
+
+	$wp_customize->add_setting(
+		'newspack_header_page',
+		array(
+			'default'           => 0,
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	$wp_customize->add_control(
+		'newspack_header_page',
+		array(
+			'label'   => esc_html__( 'Header Page', 'newspack' ),
+			'section' => 'newspack_header_footer_options',
+			'type'    => 'dropdown-pages',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'newspack_footer_page',
+		array(
+			'default'           => 0,
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	$wp_customize->add_control(
+		'newspack_footer_page',
+		array(
+			'label'   => esc_html__( 'Footer widgets page', 'newspack' ),
+			'section' => 'newspack_header_footer_options',
+			'type'    => 'dropdown-pages',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'newspack_siteinfo_page',
+		array(
+			'default'           => 0,
+			'sanitize_callback' => 'absint',
+		)
+	);
+
+	$wp_customize->add_control(
+		'newspack_siteinfo_page',
+		array(
+			'label'   => esc_html__( 'Footer site info page', 'newspack' ),
+			'section' => 'newspack_header_footer_options',
+			'type'    => 'dropdown-pages',
+		)
+	);
+
+	/**
 	 * Primary color.
 	 */
 	$wp_customize->add_setting(

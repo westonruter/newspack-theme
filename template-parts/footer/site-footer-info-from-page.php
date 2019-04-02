@@ -1,30 +1,34 @@
 <?php
 /**
- * Displays site footer from page
+ * Displays site info from page
  *
  * @package Newspack
  */
 ?>
 
 <?php
-$footer_info = new WP_Query(
+
+$site_info_id = get_theme_mod( 'newspack_siteinfo_page' );
+
+if ( ! $site_info_id ) {
+	return;
+}
+
+$site_info_query = new WP_Query(
 	array(
-		'pagename' => 'newspack-footer-info',
+		'page_id' => $site_info_id,
 	)
 );
 
 // The Loop
-if ( $footer_info->have_posts() ) {
-?>
-	<div class="site-info">
-		<?php
-		while ( $footer_info->have_posts() ) {
-			$footer_info->the_post();
-			the_content();
-		}
-		?>
-	</div><!-- .site-info -->
-	<?php
-	wp_reset_postdata();
+if ( $site_info_query->have_posts() ) {
+	echo '<div class="site-info">';
+	while ( $site_info_query->have_posts() ) {
+		$site_info_query->the_post();
+		the_content();
+	}
+	echo '</div><!-- .site-info -->';
 }
-?>
+wp_reset_postdata();
+
+

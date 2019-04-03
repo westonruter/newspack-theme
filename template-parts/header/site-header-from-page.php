@@ -7,7 +7,7 @@
 ?>
 
 <?php
-$header_id = get_theme_mod( 'newspack_header_page' );
+$header_id = get_theme_mod( 'page_for_header' );
 
 if ( ! $header_id ) {
 	return;

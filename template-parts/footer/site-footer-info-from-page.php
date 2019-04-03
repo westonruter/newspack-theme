@@ -8,7 +8,7 @@
 
 <?php
 
-$site_info_id = get_theme_mod( 'newspack_siteinfo_page' );
+$site_info_id = get_theme_mod( 'page_for_siteinfo' );
 
 if ( ! $site_info_id ) {
 	return;

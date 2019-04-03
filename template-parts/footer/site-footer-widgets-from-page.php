@@ -7,7 +7,7 @@
 ?>
 
 <?php
-$footer_id = get_theme_mod( 'newspack_footer_page' );
+$footer_id = get_theme_mod( 'page_for_footer_widgets' );
 
 if ( ! $footer_id ) {
 	return;

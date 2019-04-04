@@ -24,7 +24,14 @@
 		<header id="masthead" class="site-header">
 
 			<div class="site-branding-container">
-				<?php get_template_part( 'template-parts/header/site', 'header-from-page' ); ?>
+				<?php
+				$header_id = get_theme_mod( 'page_for_header' );
+				if ( $header_id ) {
+					get_template_part( 'template-parts/header/site', 'header-from-page' );
+				} else {
+					get_template_part( 'template-parts/header/site', 'branding' );
+				}
+				?>
 			</div><!-- .layout-wrap -->
 
 		</header><!-- #masthead -->

@@ -213,7 +213,7 @@ function newspack_content_width() {
 	// This variable is intended to be overruled from themes.
 	// Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
 	// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-	$GLOBALS['content_width'] = apply_filters( 'newspack_content_width', 640 );
+	$GLOBALS['content_width'] = apply_filters( 'newspack_content_width', 960 );
 }
 add_action( 'after_setup_theme', 'newspack_content_width', 0 );
 
@@ -342,4 +342,11 @@ require get_template_directory() . '/inc/style-packs.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+
+/**
+ * Load WooCommerce compatibility file.
+ */
+if ( class_exists( 'WooCommerce' ) ) {
+	require get_template_directory() . '/inc/woocommerce.php';
 }

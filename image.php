@@ -43,11 +43,11 @@ get_header();
 						the_content();
 						wp_link_pages(
 							array(
-								'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'newspack' ) . '</span>',
+								'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'newspack' ) . '</span>',
 								'after'       => '</div>',
 								'link_before' => '<span>',
 								'link_after'  => '</span>',
-								'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'newspack' ) . ' </span>%',
+								'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'newspack' ) . ' </span>%',
 								'separator'   => '<span class="screen-reader-text">, </span>',
 							)
 						);
@@ -61,7 +61,7 @@ get_header();
 					if ( $metadata ) {
 						printf(
 							'<span class="full-size-link"><span class="screen-reader-text">%1$s</span><a href="%2$s">%3$s &times; %4$s</a></span>',
-							_x( 'Full size', 'Used before full size attachment link.', 'newspack' ),
+							esc_html_x( 'Full size', 'Used before full size attachment link.', 'newspack' ),
 							esc_url( wp_get_attachment_url() ),
 							absint( $metadata['width'] ),
 							absint( $metadata['height'] )
@@ -78,7 +78,15 @@ get_header();
 				// Parent post navigation.
 				the_post_navigation(
 					array(
-						'prev_text' => _x( '<span class="meta-nav">Published in</span><br><span class="post-title">%title</span>', 'Parent post link', 'newspack' ),
+						'prev_text' => wp_kses(
+							_x( '<span class="meta-nav">Published in</span><br><span class="post-title">%title</span>', 'Parent post link', 'newspack' ),
+							array(
+								'span' => array(
+									'class' => array(),
+								),
+								'br'   => array(),
+							)
+						),
 					)
 				);
 

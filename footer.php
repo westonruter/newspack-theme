@@ -20,10 +20,10 @@
 			<?php if ( ! empty( $blog_info ) ) : ?>
 				<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a><span class="comma">,</span>
 			<?php endif; ?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'newspack' ) ); ?>" class="imprint">
+			<a href="<?php echo esc_url( esc_html__( 'https://wordpress.org/', 'newspack' ) ); ?>" class="imprint">
 				<?php
 				/* translators: %s: WordPress. */
-				printf( __( 'Proudly powered by %s.', 'newspack' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s.', 'newspack' ), 'WordPress' );
 				?>
 			</a>
 			<?php

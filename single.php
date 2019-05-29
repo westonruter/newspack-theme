@@ -25,19 +25,29 @@ get_header();
 					// Parent post navigation.
 					the_post_navigation(
 						array(
-							/* translators: %s: parent post link */
-							'prev_text' => sprintf( __( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'newspack' ), '%title' ),
+							'prev_text' => sprintf(
+								wp_kses(
+									/* translators: %s: parent post link */
+									__( '<span class="meta-nav">Published in</span><span class="post-title">%s</span>', 'newspack' ),
+									array(
+										'span' => array(
+											'class' => array(),
+										),
+									)
+								),
+								'%title'
+							),
 						)
 					);
 				} elseif ( is_singular( 'post' ) ) {
 					// Previous/next post navigation.
 					the_post_navigation(
 						array(
-							'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next Post', 'newspack' ) . '</span> ' .
-								'<span class="screen-reader-text">' . __( 'Next post:', 'newspack' ) . '</span> <br/>' .
+							'next_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Next Post', 'newspack' ) . '</span> ' .
+								'<span class="screen-reader-text">' . esc_html__( 'Next post:', 'newspack' ) . '</span> <br/>' .
 								'<span class="post-title">%title</span>',
-							'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous Post', 'newspack' ) . '</span> ' .
-								'<span class="screen-reader-text">' . __( 'Previous post:', 'newspack' ) . '</span> <br/>' .
+							'prev_text' => '<span class="meta-nav" aria-hidden="true">' . esc_html__( 'Previous Post', 'newspack' ) . '</span> ' .
+								'<span class="screen-reader-text">' . esc_html__( 'Previous post:', 'newspack' ) . '</span> <br/>' .
 								'<span class="post-title">%title</span>',
 						)
 					);

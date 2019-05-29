@@ -54,10 +54,10 @@ if ( ! function_exists( 'newspack_setup' ) ) :
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus(
 			array(
-				'primary-menu'   => __( 'Primary Menu', 'newspack' ),
-				'secondary-menu' => __( 'Secondary Menu', 'newspack' ),
-				'footer'         => __( 'Footer Menu', 'newspack' ),
-				'social'         => __( 'Social Links Menu', 'newspack' ),
+				'primary-menu'   => esc_html__( 'Primary Menu', 'newspack' ),
+				'secondary-menu' => esc_html__( 'Secondary Menu', 'newspack' ),
+				'footer'         => esc_html__( 'Footer Menu', 'newspack' ),
+				'social'         => esc_html__( 'Social Links Menu', 'newspack' ),
 			)
 		);
 
@@ -112,26 +112,26 @@ if ( ! function_exists( 'newspack_setup' ) ) :
 			'editor-font-sizes',
 			array(
 				array(
-					'name'      => __( 'Small', 'newspack' ),
-					'shortName' => __( 'S', 'newspack' ),
+					'name'      => esc_html__( 'Small', 'newspack' ),
+					'shortName' => esc_html__( 'S', 'newspack' ),
 					'size'      => 19.5,
 					'slug'      => 'small',
 				),
 				array(
-					'name'      => __( 'Normal', 'newspack' ),
-					'shortName' => __( 'M', 'newspack' ),
+					'name'      => esc_html__( 'Normal', 'newspack' ),
+					'shortName' => esc_html__( 'M', 'newspack' ),
 					'size'      => 22,
 					'slug'      => 'normal',
 				),
 				array(
-					'name'      => __( 'Large', 'newspack' ),
-					'shortName' => __( 'L', 'newspack' ),
+					'name'      => esc_html__( 'Large', 'newspack' ),
+					'shortName' => esc_html__( 'L', 'newspack' ),
 					'size'      => 36.5,
 					'slug'      => 'large',
 				),
 				array(
-					'name'      => __( 'Huge', 'newspack' ),
-					'shortName' => __( 'XL', 'newspack' ),
+					'name'      => esc_html__( 'Huge', 'newspack' ),
+					'shortName' => esc_html__( 'XL', 'newspack' ),
 					'size'      => 49.5,
 					'slug'      => 'huge',
 				),
@@ -146,35 +146,35 @@ if ( ! function_exists( 'newspack_setup' ) ) :
 			'editor-color-palette',
 			array(
 				array(
-					'name'  => __( 'Primary', 'newspack' ),
+					'name'  => esc_html__( 'Primary', 'newspack' ),
 					'slug'  => 'primary',
 					'color' => 'default' === get_theme_mod( 'theme_colors' ) ?
 						$primary_color :
 						get_theme_mod( 'primary_color_hex', $primary_color ),
 				),
 				array(
-					'name'  => __( 'Primary Variation', 'newspack' ),
+					'name'  => esc_html__( 'Primary Variation', 'newspack' ),
 					'slug'  => 'primary-variation',
 					'color' => 'default' === get_theme_mod( 'theme_colors' ) ?
 						newspack_adjust_brightness( $primary_color, -40 ) :
 						newspack_adjust_brightness( get_theme_mod( 'primary_color_hex', $primary_color ), -40 ),
 				),
 				array(
-					'name'  => __( 'Secondary', 'newspack' ),
+					'name'  => esc_html__( 'Secondary', 'newspack' ),
 					'slug'  => 'secondary',
 					'color' => 'default' === get_theme_mod( 'theme_colors' ) ?
 						$secondary_color :
 						get_theme_mod( 'secondary_color_hex', $secondary_color ),
 				),
 				array(
-					'name'  => __( 'Secondary Variation', 'newspack' ),
+					'name'  => esc_html__( 'Secondary Variation', 'newspack' ),
 					'slug'  => 'secondary-variation',
 					'color' => 'default' === get_theme_mod( 'theme_colors' ) ?
 						newspack_adjust_brightness( $secondary_color, -40 ) :
 						newspack_adjust_brightness( get_theme_mod( 'secondary_color_hex', $secondary_color ), -40 ),
 				),
 				array(
-					'name'  => __( 'White', 'newspack' ),
+					'name'  => esc_html__( 'White', 'newspack' ),
 					'slug'  => 'white',
 					'color' => '#FFF',
 				),
@@ -196,9 +196,9 @@ function newspack_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => __( 'Footer', 'newspack' ),
+			'name'          => esc_html__( 'Footer', 'newspack' ),
 			'id'            => 'sidebar-1',
-			'description'   => __( 'Add widgets here to appear in your footer.', 'newspack' ),
+			'description'   => esc_html__( 'Add widgets here to appear in your footer.', 'newspack' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',

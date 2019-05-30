@@ -13,7 +13,7 @@ if ( $has_responses ) {
 	/* translators: %1(X comments)$s */
 	$meta_label = sprintf( _n( '%d Comment', '%d Comments', $discussion->responses, 'newspack' ), $discussion->responses );
 } else {
-	$meta_label = __( 'No comments', 'newspack' );
+	$meta_label = esc_html__( 'No comments', 'newspack' );
 }
 ?>
 

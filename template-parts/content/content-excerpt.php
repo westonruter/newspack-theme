@@ -13,7 +13,7 @@
 	<header class="entry-header">
 		<?php
 		if ( is_sticky() && is_home() && ! is_paged() ) {
-			printf( '<span class="sticky-post">%s</span>', _x( 'Featured', 'post', 'newspack' ) );
+			printf( '<span class="sticky-post">%s</span>', esc_html_x( 'Featured', 'post', 'newspack' ) );
 		}
 		the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 		?>

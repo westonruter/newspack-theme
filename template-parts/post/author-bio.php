@@ -12,7 +12,7 @@ if ( (bool) get_the_author_meta( 'description' ) ) : ?>
 			<?php
 			printf(
 				/* translators: %s: post author */
-				__( 'Published by %s', 'newspack' ),
+				esc_html__( 'Published by %s', 'newspack' ),
 				esc_html( get_the_author() )
 			);
 			?>
@@ -21,7 +21,7 @@ if ( (bool) get_the_author_meta( 'description' ) ) : ?>
 	<p class="author-description">
 		<?php the_author_meta( 'description' ); ?>
 		<a class="author-link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-			<?php _e( 'View more posts', 'newspack' ); ?>
+			<?php esc_html_e( 'View more posts', 'newspack' ); ?>
 		</a>
 	</p><!-- .author-description -->
 </div><!-- .author-bio -->

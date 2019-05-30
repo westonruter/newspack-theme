@@ -22,7 +22,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'newspack' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'newspack' ),
 				'after'  => '</div>',
 			)
 		);

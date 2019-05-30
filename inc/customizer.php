@@ -14,7 +14,7 @@ function newspack_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-	$wp_customize->get_control( 'header_text' )->label          = __( 'Display Site Title', 'newspack' );
+	$wp_customize->get_control( 'header_text' )->label          = esc_html__( 'Display Site Title', 'newspack' );
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial(
@@ -48,10 +48,10 @@ function newspack_customize_register( $wp_customize ) {
 		'theme_colors',
 		array(
 			'type'     => 'radio',
-			'label'    => __( 'Primary Color', 'newspack' ),
+			'label'    => esc_html__( 'Primary Color', 'newspack' ),
 			'choices'  => array(
-				'default' => _x( 'Default', 'primary color', 'newspack' ),
-				'custom'  => _x( 'Custom', 'primary color', 'newspack' ),
+				'default' => esc_html_x( 'Default', 'primary color', 'newspack' ),
+				'custom'  => esc_html_x( 'Custom', 'primary color', 'newspack' ),
 			),
 			'section'  => 'colors',
 			'priority' => 5,
@@ -72,7 +72,7 @@ function newspack_customize_register( $wp_customize ) {
 			$wp_customize,
 			'primary_color_hex',
 			array(
-				'description' => __( 'Apply a primary custom color.', 'newspack' ),
+				'description' => esc_html__( 'Apply a primary custom color.', 'newspack' ),
 				'section'     => 'colors',
 			)
 		)
@@ -92,7 +92,7 @@ function newspack_customize_register( $wp_customize ) {
 			$wp_customize,
 			'secondary_color_hex',
 			array(
-				'description' => __( 'Apply a secondary custom color.', 'newspack' ),
+				'description' => esc_html__( 'Apply a secondary custom color.', 'newspack' ),
 				'section'     => 'colors',
 			)
 		)

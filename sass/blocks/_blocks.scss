@@ -540,22 +540,7 @@
 		}
 
 		.aligncenter {
-
-			@include media(tablet) {
-				margin: 0;
-				width: 100%;
-
-				img {
-					margin: 0 auto;
-				}
-			}
-
-			@include media(desktop) {
-
-				img {
-					margin: 0 auto;
-				}
-			}
+			margin: 0 auto;
 		}
 
 		&.alignfull img {
@@ -565,6 +550,10 @@
 
 		&.alignwide {
 			max-width: 100vw;
+		}
+
+		figcaption {
+			border-bottom: 1px solid #ccc;
 		}
 	}
 
